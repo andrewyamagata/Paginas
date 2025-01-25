@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Image Carousel</title>
+    <style>
+      /* Adicione seu CSS aqui */
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: Arial, sans-serif;
+        background-color: #000;
+      }
+
+      .card {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+      }
+
+      .card-content {
+        position: absolute;
+        z-index: 40;
+        color: white;
+      }
+
+      .content-place,
+      .content-title-1,
+      .content-title-2 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      .progress-bar {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        width: 500px;
+        height: 10px;
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .progress-sub-foreground {
+        height: 100%;
+        background-color: #fff;
+        width: 0;
+      }
+
+      .indicator {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+        background-color: #ccc;
+      }
+
+      .item {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        margin-right: 5px;
+        cursor: pointer;
+        text-align: center;
+        line-height: 20px;
+      }
+
+      .cover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+      }
+
+      .details-box {
+        position: absolute;
+        z-index: 20;
+        top: 0;
+        width: 100%;
+        padding: 20px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
+      }
+
+      nav {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+      }
+
+      #pagination {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 60;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <div id="slide-numbers"></div>
+    <nav>
+      <div class="progress-bar">
+        <div class="progress-sub-foreground"></div>
+      </div>
+    </nav>
+    <div id="pagination"></div>
+    <div id="details-even" class="details-box"></div>
+    <div id="details-odd" class="details-box"></div>
+    <div class="cover"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script>
+      // O código JavaScript aprimorado que passei anteriormente deve ser colocado aqui.
+    </script>
+  </body>
+</html>
