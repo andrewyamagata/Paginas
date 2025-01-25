@@ -1,0 +1,61 @@
+/* PÁGINAS SECUNDÁRIAS */
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-family: "amatic sc", sans-serif;
+}
+
+h1 {
+  height: 10vh; /* Aumenta a altura do cabeçalho */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Reduz o espaçamento entre as letras */
+  margin: 0; /* Remove a margem padrão */
+  background-color: #2c3e7a; /* Cor de fundo do cabeçalho */
+  color: #fff; /* Cor do texto no cabeçalho */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+}
+
+h1:hover {
+  background-color: #1a274f; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+.container-home {
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 5px;
+}
+
+@media screen and (min-width: 601px) {
+  .container-home {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-home {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* FOOTER */
+.footer {
+  height: 100px;
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e7a;
+}
