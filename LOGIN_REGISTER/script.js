@@ -2,7 +2,7 @@ const register_btn = document.querySelector(".register-btn");
 const login_btn = document.querySelector(".login-btn");
 const login_nav_btn = document.querySelector(".login-nav-btn");
 const close_icon = document.querySelector(".close-icon");
-const form_box = document.querySelector(".form_box");
+const form_box = document.querySelector(".form-box");
 register_btn.onclick = () => {
   form_box.classList.add("change-form");
 };
