@@ -209,11 +209,13 @@ header nav a:hover::before {
 .change-form .login-form {
   transform: translateX(100%);
   opacity: 0;
+  pointer-events: none;
 }
 
 .change-form .register-form {
   transform: translateX(0%);
   opacity: 1;
+  pointer-events: auto;
 }
 
 .close-form {
